@@ -1,0 +1,21 @@
+### create a question
+
+POST http://127.0.0.1:5000/routes/questions
+Content-Type: application/json
+
+{
+    "name":"Todd",
+    "text": "Todd has questions you must have answers.",
+    "repo": "repo",
+    "live": "live"
+}
+
+### view question
+GET http://127.0.0.1:5000/routes/questions
+Content-Type: application/json
+
+
+### edit question
+
+### delete question
+
