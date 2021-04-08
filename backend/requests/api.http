@@ -5,7 +5,7 @@ Content-Type: application/json
 
 {
     "name":"Todd",
-    "text": "Todd has questions you must have answers.",
+    "text": "Todd has another question.",
     "repo": "repo",
     "live": "live"
 }
@@ -16,6 +16,16 @@ Content-Type: application/json
 
 
 ### edit question
+
+PATCH http://127.0.0.1:5000/routes/questions/606f5767b3acb61044c497d8
+Content-Type: application/json
+
+{
+    "name":"Todd",
+    "text": "Todd no longer has questions.",
+    "repo": "repo",
+    "live": "live"
+}
 
 ### delete question
 DELETE http://127.0.0.1:5000/routes/questions/606f5418b3acb61044c497d7
