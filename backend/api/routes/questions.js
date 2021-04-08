@@ -1,4 +1,5 @@
 const express = require('express');
+const question = require('../../models/question');
 const router = express.Router();
 
 const Question = require('../../models/question');
@@ -16,12 +17,13 @@ router.post('/', (req, res) => {
         live: req.body.live
     })
     newQuestion.save().then(question => res.json(question))
-    .catch(err => res.status(404).json(err))
+    .catch(err => res.status('404').json(err))
 })
 
 router.delete('/:question_id', (req, res) => {
     Question.findOneAndDelete({_id: req.params.question_id}, {$set: req.body})
-    .then()
+    .then(questions => res.json({_id:question._id}))
+    .catch(err => res.status('404').json(err))
 })
 
 module.exports = router;

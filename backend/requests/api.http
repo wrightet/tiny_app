@@ -18,4 +18,5 @@ Content-Type: application/json
 ### edit question
 
 ### delete question
-
+DELETE http://127.0.0.1:5000/routes/questions/606f5418b3acb61044c497d7
+Content-Type: application/json
