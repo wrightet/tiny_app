@@ -10,7 +10,7 @@ mongoose
     .catch(err => console.log(err));
 
 app.get('/', (req, res) => res.send("This works huzzah"));
-const questions = require('./api/routes/questions');
-app.use('/routes/questions', questions);
+const questions = require('./routes/api/questions');
+app.use('/api/questions', questions);
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`server is serving on port ${port}`));
