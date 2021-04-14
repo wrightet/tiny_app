@@ -1,4 +1,5 @@
 import { Provider } from 'react-redux';
+import Form from './components/form';
 import './App.css';
 
 function App({ store }) {
@@ -9,7 +10,7 @@ function App({ store }) {
           header
         </header>
         <div>
-          test
+          <Form/>
         </div>
       </div>
     </Provider>

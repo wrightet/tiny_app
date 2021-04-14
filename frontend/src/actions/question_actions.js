@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export const receiveQuestions = createAction('RECEIVE_QUESTIONS');
 export const receiveQuestion = createAction('RECEIVE_QUESTION');
-export const RemoveQuestion = createAction('REMOVE_QUESTION');
+export const removeQuestion = createAction('REMOVE_QUESTION');
 
 export const fetchQuestions = () => async dispatch=> {
     try {
