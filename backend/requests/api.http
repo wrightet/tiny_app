@@ -17,12 +17,12 @@ Content-Type: application/json
 
 ### edit question
 
-PATCH http://127.0.0.1:5000/api/questions/606f5767b3acb61044c497d8
+PATCH http://127.0.0.1:5000/api/questions/607652d23cbed73b8204e54e
 Content-Type: application/json
 
 {
     "name":"Todd",
-    "text": "Todd no longer has questions.",
+    "text": "Todd has a test.",
     "repo": "repo",
     "live": "live",
     "answered":"true"
