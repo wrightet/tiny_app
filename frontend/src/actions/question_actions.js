@@ -41,9 +41,9 @@ export const submitQuestion = question => async dispatch=> {
         console.log(error);
     }
 }
-export const editQuestion = (question, id) => async dispatch=> {
+export const updateQuestion = (question) => async dispatch=> {
     try {
-        const res = await axios.patch(`http://localhost:5000/api/questions/${id}`, question)
+        const res = await axios.patch(`http://localhost:5000/api/questions/${question.id}`, question)
         dispatch(receiveQuestion(res.data));
     }
     catch (error) {
